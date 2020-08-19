@@ -103,7 +103,6 @@ void adc1task(void *arg)
         //Convert adc_reading to voltage in mV
         float voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
         printf("Raw: %1f\tVoltage: %1fmV\n", adc_reading, voltage);
-        //value_voice = 20 * log10(voltage /);
 
         //if (voltage <= 200)
         //{
